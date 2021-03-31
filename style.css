@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+/* centering image + covering window from Yauhen Yakimovich's answer on
+https://stackoverflow.com/questions/9262861/css-background-image-to-fit-width-height-should-auto-scale-in-proportion */
+html {
+  background-image: url("images/beach.gif");
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+canvas {
+  z-index: 2;
+}
+
+title {
+  display: none;
+}
+
+.typingEffect {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  text-align: center;
+  top: 45%;
+  margin-right: 2%;
+  margin-left: 2%;
+  position: absolute;
+  display: block;
+}
+
+.typingEffect::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
