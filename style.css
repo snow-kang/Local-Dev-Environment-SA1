@@ -26,19 +26,19 @@ title {
   display: none;
 }
 
-.typingEffect {
+.typingText {
   font-size: 50px;
   font-family: "Dancing Script", cursive;
   color: white;
   text-align: center;
-  top: 45%;
+  top: 400px;
   margin-right: 2%;
   margin-left: 2%;
   position: absolute;
   display: block;
 }
 
-.typingEffect::after {
+.typingText::after {
   content: "|";
   animation: blink 1s infinite;
 }
