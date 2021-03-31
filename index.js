@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 /* TEXT LOCAL VARIABLES */
 let idx = 0;
 let introText =
-  "Hi! I'm Snow from Florida :) Click somewhere to experience a day in my life :p";
+  "Hi! I'm Snow from Florida :) Click somewhere to bring me to the beach :O";
 let speed = 100; // speed of the typing effect (duration in milliseconds)
 
 /* SCENE LOCAL VARIABLES */
